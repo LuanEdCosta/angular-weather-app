@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="content">
+    <h1 class="title">How's the weather in your city?</h1>
+    <div class="subtitle">Discover it now!</div>
+
+    <form class="search-form" (submit)="onSearch($event)">
+      <input
+        type="text"
+        class="search-form-input"
+        placeholder="Type the city name..."
+        [(ngModel)]="search"
+        [ngModelOptions]="{ standalone: true }"
+      />
+
+      <button class="search-form-button" type="submit">
+        <span>Search</span>
+        <i-feather name="search"></i-feather>
+      </button>
+    </form>
+  </div>
+</div>
