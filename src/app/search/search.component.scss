@@ -7,7 +7,7 @@
   .content {
     padding: 1.6rem;
     width: 100%;
-    max-width: 60rem;
+    max-width: 70rem;
 
     .title {
       margin: 0 0 0.8rem 0;
@@ -44,7 +44,7 @@
         border-radius: 0 1rem 1rem 0;
         background: var(--accent);
         border: 1px solid var(--accent);
-        color: white;
+        color: var(--accent-text-contrast);
         display: flex;
         align-items: center;
         padding: 0 1.6rem;
@@ -57,7 +57,7 @@
 
         &:hover,
         &:focus {
-          background: white;
+          background: var(--accent-text-contrast);
           color: var(--accent);
         }
       }

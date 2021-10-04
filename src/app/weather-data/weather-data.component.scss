@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1.6rem;
+  background: var(--snow);
+  border-radius: 1rem;
+
+  .icon,
+  .label {
+    margin-right: 1.6rem;
+  }
+
+  .value {
+    color: var(--accent);
+    font-size: 1.8rem;
+    font-weight: bold;
+    flex: 1;
+    text-align: right;
+  }
+}

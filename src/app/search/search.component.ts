@@ -13,6 +13,6 @@ export class SearchComponent {
 
   onSearch(e: Event) {
     e.preventDefault();
-    this.router.navigate(['weather', this.search]);
+    this.router.navigate(['weather', this.search.trim()]);
   }
 }

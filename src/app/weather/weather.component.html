@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="content">
+    <div class="content-header">
+      <div class="content-header-texts">
+        <div class="content-header-texts-label">Weather Data For</div>
+        <div class="content-header-texts-title">{{ city }}</div>
+        <div class="content-header-texts-subtitle">
+          {{ weatherData?.country }}
+        </div>
+      </div>
+
+      <Button class="content-header-reload" (click)="reload()">
+        <i-feather name="refresh-ccw"></i-feather>
+      </Button>
+    </div>
+
+    <div class="content-data">
+      <app-weather-data
+        label="Temperature"
+        value="{{ weatherData?.temperatureCelsius }}"
+        format="celsius"
+      >
+        <i-feather name="thermometer"></i-feather>
+      </app-weather-data>
+
+      <app-weather-data
+        label="Feels Like"
+        value="{{ weatherData?.feelsLikeCelsius }}"
+        format="celsius"
+      >
+        <i-feather name="thermometer"></i-feather>
+      </app-weather-data>
+
+      <app-weather-data
+        label="Cloud Cover"
+        value="{{ weatherData?.cloudCoverPercentage }}"
+        format="percentage"
+      >
+        <i-feather name="cloud"></i-feather>
+      </app-weather-data>
+
+      <app-weather-data
+        label="Humidity"
+        value="{{ weatherData?.humidityPercentage }}"
+        format="percentage"
+      >
+        <i-feather name="droplet"></i-feather>
+      </app-weather-data>
+
+      <app-weather-data
+        label="Wind Speed"
+        value="{{ weatherData?.windSpeedKmh }}"
+        format="km/h"
+      >
+        <i-feather name="wind"></i-feather>
+      </app-weather-data>
+    </div>
+  </div>
+</div>
