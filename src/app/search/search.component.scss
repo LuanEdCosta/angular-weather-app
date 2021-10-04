@@ -3,11 +3,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1.6rem;
+  background-image: url("/assets/Background.jpg");
 
   .content {
     padding: 1.6rem;
     width: 100%;
     max-width: 70rem;
+    background: var(--background);
+    border-radius: 1rem;
 
     .title {
       margin: 0 0 0.8rem 0;
