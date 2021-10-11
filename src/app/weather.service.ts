@@ -8,7 +8,7 @@ export class WeatherService {
   constructor(private http: HttpClient) {}
 
   private getBaseUrl(): string {
-    return 'http://wttr.in';
+    return 'https://wttr.in';
   }
 
   getCityWeather(city: string) {
