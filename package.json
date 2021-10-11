@@ -11,7 +11,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng deploy --base-href=/angular-weather-app/"
   },
   "dependencies": {
     "@angular/animations": "~12.2.0",
