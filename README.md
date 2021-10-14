@@ -1,6 +1,6 @@
 # :cloud: Angular Weather App
 
-Weather app created to study the basics of Angular.
+Weather app created to study the basics of [Angular](https://angular.io/).
 
 I tried to do with **Angular** what I do with **React**. These technologies technically do the same thing but work differently. Somethings are easy to do with React, but not so easy with Angular and vice-versa. I think learning Angular can help me to create better React apps.
 
